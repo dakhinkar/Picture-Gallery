@@ -1,0 +1,12 @@
+.photo-card{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-mrg{
+    margin-top: 20px;
+}
+.loading{
+    margin: 0 auto;
+}

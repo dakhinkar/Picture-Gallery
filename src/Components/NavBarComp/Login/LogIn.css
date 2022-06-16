@@ -1,0 +1,11 @@
+.mb-3{
+    text-align: left;
+}
+
+Form{
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 20px
+}
