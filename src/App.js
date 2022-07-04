@@ -6,7 +6,7 @@ import PhotosComponents from "./Components/NavBarComp/Photos/Photos";
 import Login from "./Components/NavBarComp/Login/Login.jsx";
 import About from "./Components/NavBarComp/About";
 import Contact from "./Components/NavBarComp/Contact";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignUpWithValidation from "./Components/NavBarComp/SignUp/SignUpWithValidation";
 import Component404 from "./Components/Errorpage/Component404";
 import PhotosEnlarged from "./Components/NavBarComp/Photos/PhotosEnlarged";
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUpWithValidation />} />
-          {/* <Route path='/photos/:id' element={<PhotosEnlarged />} /> */}
+          <Route path='/photos/:id' element={<PhotosEnlarged />} />
           <Route path="*" element={<Component404 />} />
         </Routes>
       </Router>

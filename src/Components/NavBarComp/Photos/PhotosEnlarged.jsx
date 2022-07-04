@@ -13,10 +13,16 @@ function PhotosEnlarged(props) {
   const { id } = useParams();
   console.log(id);
   useEffect(() => {
-    axios
-      .get(`https://picsum.photos/id/${id}/info`)
-      .then((res) => this.setPhotoURL(res.data.download_url))
-      .catch((err) => console.log(err.message));
+    const photosAynch = async () => {
+      try {
+        let res = await axios.get(`https://picsum.photos/id/${id}/info`);
+        setPhotoURL(res.data.download_url);
+      } catch (err) {
+        console.log(err.message);
+      }
+    };
+    photosAynch();
+  
   }, [id]);
   return (
     <div>
